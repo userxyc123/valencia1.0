@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Arrange elements in a column */
+}
+
+#chat-container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#gif-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin below the GIF container */
+}
+
+#gif-player {
+    width: 100%;
+    max-width: 560px; /* Set a max width to prevent overflowing */
+    height: 315px;
+}
+
+#chat-box {
+    height: 200px;
+    padding: 20px;
+    overflow-y: auto;
+    border-top: 1px solid #eee; /* Changed border to top to separate from GIF */
+    flex-grow: 1;
+}
+
+#chat-box .message {
+    margin-bottom: 10px;
+}
+
+#chat-box .message.user {
+    text-align: right;
+    color: blue;
+}
+
+#chat-box .message.bot {
+    text-align: left;
+    color: green;
+}
+
+#user-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+#send-btn {
+    width: 60px;
+    padding: 10px;
+    border: none;
+    background-color: #9dd9ed;
+    color: black;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+}
